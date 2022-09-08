@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+
+h2 {
+    font: italic 16px Arial, sans-serif;
+    color: rgb(122, 122, 122);
+    margin: 0 0 15px 15px;
+}
+
+/* Amazon navbar: */
+.amazon ul {
+    background-color: rgb(37,47,61);
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.amazon li {
+    color: rgb(225, 226, 228);
+    font: 14px Arial, Helvetica, sans-serif;
+    margin: 8px 0 10px 0;
+    border: 1px solid rgb(37,47,61);
+}
+
+.amazon a:link, .amazon a:visited {
+    border: 1px solid rgb(37,47,61);
+    text-decoration: none;
+    color: rgb(225, 226, 228);
+    padding: 7px 8px;
+}
+
+.amazon a:hover {
+    border: 1px solid rgb(225, 226, 228);
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+/* Gritacademy navbar: */
+.grit ul {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.grit a {
+    padding: 0 20px;
+    font: 400 17px/60px "Lato", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(68,68,68);
+    border-left: 1px solid rgba(0,0,0,.05);
+}
+
+.grit a:link, .grit a:visited {
+    text-decoration: none;
+    color: rgb(68,68,68);
+}
+
+.grit a:hover {
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    color: #ae8e42;
+}
+
+.start a:link, .start a:visited, .start a:hover {
+    color: #ae8e42;
+    border: none;
+}
+
+/* Liseberg navbar: */
+
+.liseberg ul {
+    display: flex;
+}
+
+.liseberg a {
+    font: 600 16px "LL Brown", sans-serif;
+    letter-spacing: .03em;
+    text-decoration: none;
+    padding: 22px 10px;
+    color: #043b54;
+    text-transform: uppercase;
+    border: 1px;
+    position: relative;
+}
+
+.liseberg a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background: #ff576a;
+    transform: scale(0,1);
+    transition: transform .3s ease;
+}
+
+.liseberg a:hover::after {
+    transform: scale(1,1);
+}
